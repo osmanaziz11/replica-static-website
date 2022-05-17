@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assects/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Top Header  -->
+      <div id="top-header" class="container-fluid w-100">
+        <div class="row h-100">
+          <div class="col-12 h-100 d-flex justify-content-end pe-sm-5 pe-1">
+            <ul class="list-unstyled d-inline-flex flex-row">
+              <li class="ms-3">REGISTER</li>
+              <li class="ms-3">
+                <i class="fas fa-sign-in-alt me-2"></i>
+                <a href="profile-builder.html">LOGIN</a>
+              </li>
+              <li class="ms-3">
+                <i class="fas fa-sign-in-alt me-2"></i>MEMBER LOGIN
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main Header  -->
+      <div id="navbar" class="container-fluid">
+        <div class="row h-100 p-3">
+          <div
+            class="col-4 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="https://www.jobs.punjab.gov.pk/new_design/images/logo.png"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+          <div
+            class="
+              col-8
+              d-flex
+              h-100
+              justify-content-center
+              align-items-center
+              ps-5
+            "
+          >
+            <ul
+              class="
+                list-unstyled
+                d-lg-flex d-none
+                align-items-center
+                h-100
+                ms-5
+              "
+            >
+              <li class="ms-5">HOME</li>
+              <li class="ms-4">JOBS</li>
+              <li class="ms-4">DEPARTMENTAL CONTACTS</li>
+              <li class="ms-4">FAQ'S</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <h4 class="text-center mt-3">Build Profile</h4>
+      <div id="build-profile-container" class="container mb-5">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex flex-wrap p-0">
+            <div class="navBox" style="background-color: #ff3200">
+              <h6>Personal Information</h6>
+            </div>
+            <div class="navBox">Experience</div>
+            <div class="navBox">Acdemics</div>
+            <div class="navBox">Skills</div>
+            <div class="navBox">Training</div>
+            <div class="navBox">Certificates</div>
+            <div class="navBox">Achievements</div>
+            <div class="navBox">Research Work</div>
+            <div class="navBox">Target Job</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-0">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col">
+            <h6>Personal Information</h6>
+            <div class="styleBar"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 position-relative mb-0 col-sm-6 col-12">
+                  <label for="inputEmail4">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="f_name"
+                    data-id="#f_name"
+                    data-emsg=".f_name_error"
+                    data-cross=".f_name_cross"
+                    data-tick=".f_name_tick"
+                    placeholder=""
+                  />
+                  <span
+                    id="cross"
+                    class="iconify position-absolute f_name_cross d-none"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    id="tick"
+                    class="iconify position-absolute d-none f_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none f_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    Please enter first name
+                  </p>
+                </div>
+
+                <div class="col-md-3 position-relative mb-0 col-sm-6 col-12">
+                  <label for="inputEmail4">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="l_name"
+                    data-id="#l_name"
+                    data-emsg=".l_name_error"
+                    data-cross=".l_name_cross"
+                    data-tick=".l_name_tick"
+                    placeholder=""
+                  />
+                  <span
+                    class="iconify position-absolute d-none l_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none l_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none l_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Date of Birth</label>
+                  <input
+                    type="datetime"
+                    class="form-control"
+                    id=""
+                    placeholder="dd-mm-yyyy"
+                  />
+                </div>
+
+                <div class="col-md-3 position-relative mb-0 col-sm-6 col-12">
+                  <label for="inputEmail4">Age</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="Age_name"
+                    data-id="#Age_name"
+                    data-emsg=".Age_name_error"
+                    data-cross=".Age_name_cross"
+                    data-tick=".Age_name_tick"
+                    placeholder="18+"
+                  />
+                  <span
+                    class="iconify position-absolute d-none Age_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none Age_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none Age_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Gender</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Others</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Marital Status</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Single</option>
+                    <option value="1">married</option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Husband Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder=""
+                    disabled
+                  />
+                </div>
+                <div class="col-md-3 mb-2 position-relative col-sm-6 col-12">
+                  <label for="inputEmail4">Father's Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fa_name"
+                    data-id="#fa_name"
+                    data-emsg=".fa_name_error"
+                    data-cross=".fa_name_cross"
+                    data-tick=".fa_name_tick"
+                    placeholder="Fathers Name"
+                  />
+                  <span
+                    class="iconify position-absolute d-none fa_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none fa_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none fa_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Domaicle</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Not Applicable</option>
+                    <option value="1">Not applicable</option>
+                    <option value="2">Others</option>
+                    <option value="3"></option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Residential Country</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Country</option>
+                    <option value="1">Pakistan</option>
+                    <option value="2">China</option>
+                    <option value="3">America</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">City</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>City</option>
+                    <option value="1">Lahore</option>
+                    <option value="2">Islamabad</option>
+                    <option value="3">Karachi</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Nationality</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Nationality</option>
+                    <option value="1">Pakistani</option>
+                    <option value="2">Others</option>
+                    <option value="3"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 position-relative mb-0 col-sm-6 col-12">
+                  <label for="inputEmail4">Religion</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="re_name"
+                    data-id="#re_name"
+                    data-emsg=".re_name_error"
+                    data-cross=".re_name_cross"
+                    data-tick=".re_name_tick"
+                    placeholder="select your relegion"
+                  />
+                  <span
+                    class="iconify position-absolute d-none re_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none re_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none re_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+                <div class="col-md-3 mb-2 position-relative col-sm-6 col-12">
+                  <label for="inputEmail4">Mobile Number</label>
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="mob_name"
+                    data-id="#mob_name"
+                    data-emsg=".mob_name_error"
+                    data-cross=".mob_name_cross"
+                    data-tick=".mob_name_tick"
+                    placeholder="+92-33434-43"
+                  />
+                  <span
+                    class="iconify position-absolute d-none mob_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none mob_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none mob_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+                <div class="col-md-3 mb-2 position-relative col-sm-6 col-12">
+                  <label for="inputEmail4">Land Line</label>
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="land_name"
+                    data-id="#land_name"
+                    data-emsg=".land_name_error"
+                    data-cross=".land_name_cross"
+                    data-tick=".land_name_tick"
+                    placeholder="051 --- -- ---"
+                  />
+                  <span
+                    class="iconify position-absolute d-none land_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none land_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none land_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+                <div class="col-md-3 mb-2 position-relative col-sm-6 col-12">
+                  <label for="inputEmail4">Postal Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pos_name"
+                    data-id="#pos_name"
+                    data-emsg=".pos_name_error"
+                    data-cross=".pos_name_cross"
+                    data-tick=".pos_name_tick"
+                    placeholder="Address"
+                  />
+                  <span
+                    class="iconify position-absolute d-none pos_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none pos_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none pos_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 mb-2 position-relative col-sm-6 col-12">
+                  <label for="inputEmail4">CNIC</label>
+                  <input
+                    type="cnic"
+                    class="form-control"
+                    id="cnic_name"
+                    data-id="#cnic_name"
+                    data-emsg=".cnic_name_error"
+                    data-cross=".cnic_name_cross"
+                    data-tick=".cnic_name_tick"
+                    placeholder="---- ------- -"
+                  />
+                  <span
+                    class="iconify position-absolute d-none cnic_name_cross"
+                    data-icon="icomoon-free:cross"
+                    style="
+                      color: #a94442 !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <span
+                    class="iconify position-absolute d-none cnic_name_tick"
+                    data-icon="subway:tick"
+                    style="
+                      color: #3c763d !important;
+                      right: 20px;
+                      top: 40px;
+                      font: size 15px;
+                    "
+                  ></span>
+                  <p
+                    class="error mb-0 mt-1 d-none cnic_name_error"
+                    style="font-size: 12px; color: #a94442"
+                  >
+                    <!-- Please enter first name -->
+                    The first name must be greater than 2 and less than 50
+                    characters
+                  </p>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">CNIC EXPIRY</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="1">Expired</option>
+                    <option value="2">Not Confirm</option>
+                    <option value="3">Not Expired</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Hafize Quran</label>
+
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>No</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Ex-Service Official</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Others</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  Are you government officail
+                  <input type="checkbox" name="" id="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Are You disable</label>
+
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  <label for="inputEmail4">Governent Officail</label>
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="col-md-3 mb-2 col-sm-6 col-12">
+                  Are you government officail
+                  <input type="checkbox" name="" id="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col">
+            <div class="form container-fluid">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Objective</label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div
+            class="col d-flex flex-column justify-content-end align-items-end"
+          >
+            <button class="sveBtn mb-2">Save</button>
+            <div class="styleBar"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button class="prevBtn me-2">Prev</button
+            ><button class="nxtBtn">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer-container" class="container-fluid">
+        <div class="row p-3">
+          <div
+            class="
+              col-md-3
+              mb-2
+              d-flex
+              justify-content-center
+              align-items-center
+              col-sm-6
+              mb-3
+            "
+          >
+            <a href="https://www.jobs.punjab.gov.pk/"
+              ><img
+                src="https://www.jobs.punjab.gov.pk/new_design/images/footer_logo.png"
+                class="img-responsive footer_img"
+            /></a>
+          </div>
+          <div
+            class="
+              col-md-3
+              mb-2
+              col-sm-6
+              d-flex
+              align-items-md-start align-items-center
+              flex-column
+              h-100
+            "
+          >
+            <h5>Sitemap</h5>
+            <ul class="list-unstyled">
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+            </ul>
+          </div>
+          <div
+            class="
+              col-md-3
+              mb-2
+              col-sm-6
+              d-flex
+              align-items-md-start align-items-center
+              flex-column
+              h-100
+            "
+          >
+            <h5>Career Center</h5>
+            <ul class="list-unstyled">
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+            </ul>
+          </div>
+          <div
+            class="
+              col-md-3
+              mb-2
+              col-sm-6
+              d-flex
+              flex-column
+              align-items-md-start align-items-center
+              h-100
+            "
+          >
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        var regexname = /^([a-zA-Z]{2,50})$/;
+        var regPhone = /^([0-9]{0,11})$/;
+        var regL = /^([a-zA-Z]{2})$/;
+        var regexDigit = /^[0-9]*$/;
+        var regexCnic = /^[0-9]{5}-[0-9]{7}-[0-9]$/;
+        $("input[type=text]").on("keyup", function () {
+          if ($(this).val().match(regexDigit)) {
+            $(`${$(this).data("emsg")}`).html("Please use only alphabets");
+            $(`${$(this).data("emsg")}`).removeClass("d-none");
+            $(`${$(this).data("id")}`).addClass("error_input");
+            $(`${$(this).data("tick")}`).addClass("d-none");
+            $(`${$(this).data("cross")}`).removeClass("d-none");
+          } else if ($(this).val().match(regexname)) {
+            $(`${$(this).data("emsg")}`).addClass("d-none");
+            $(`${$(this).data("id")}`).removeClass("error_input");
+            $(`${$(this).data("cross")}`).addClass("d-none");
+            $(`${$(this).data("tick")}`).removeClass("d-none");
+          }
+          if ($(this).val().match(regL)) {
+            $(`${$(this).data("emsg")}`).html(
+              "The first name must be greater than 2 and less than 50 characters"
+            );
+            $(`${$(this).data("emsg")}`).removeClass("d-none");
+            $(`${$(this).data("id")}`).addClass("error_input");
+            $(`${$(this).data("tick")}`).addClass("d-none");
+            $(`${$(this).data("cross")}`).removeClass("d-none");
+          }
+        });
+
+        $("input[type=cnic]").on("keyup", function () {
+          console.log($(this).data("id"));
+          if (!$(this).val().match(regexCnic)) {
+            $(`${$(this).data("emsg")}`).html("invalid cnic");
+            $(`${$(this).data("emsg")}`).removeClass("d-none");
+            $(`${$(this).data("id")}`).addClass("error_input");
+            $(`${$(this).data("tick")}`).addClass("d-none");
+            $(`${$(this).data("cross")}`).removeClass("d-none");
+          } else if ($(this).val().match(regexname)) {
+            $(`${$(this).data("emsg")}`).addClass("d-none");
+            $(`${$(this).data("id")}`).removeClass("error_input");
+            $(`${$(this).data("cross")}`).addClass("d-none");
+            $(`${$(this).data("tick")}`).removeClass("d-none");
+          }
+        });
+
+        $("input[type=phone]").on("keyup", function () {
+          var regexname = /^([a-zA-Z]{2,50})$/;
+          var regL = /^([0-9]{2})$/;
+          var regexDigit = /^[0-9]*$/;
+          var regPhone = /^([0-9]{0,11})$/;
+          console.log($(this).data("id"));
+          if ($(this).val().match(regexname)) {
+            $(`${$(this).data("emsg")}`).html("Please use only digits");
+            $(`${$(this).data("emsg")}`).removeClass("d-none");
+            $(`${$(this).data("id")}`).addClass("error_input");
+            $(`${$(this).data("tick")}`).addClass("d-none");
+            $(`${$(this).data("cross")}`).removeClass("d-none");
+          } else if ($(this).val().match(regPhone)) {
+            console.log("1111111");
+            $(`${$(this).data("emsg")}`).addClass("d-none");
+            $(`${$(this).data("id")}`).removeClass("error_input");
+            $(`${$(this).data("cross")}`).addClass("d-none");
+            $(`${$(this).data("tick")}`).removeClass("d-none");
+          }
+          if ($(this).val().match(regL)) {
+            $(`${$(this).data("emsg")}`).html(
+              "The number must be greater than 2 and less than 11 characters"
+            );
+            $(`${$(this).data("emsg")}`).removeClass("d-none");
+            $(`${$(this).data("id")}`).addClass("error_input");
+            $(`${$(this).data("tick")}`).addClass("d-none");
+            $(`${$(this).data("cross")}`).removeClass("d-none");
+          }
+        });
+      });
+    </script>
+    <script></script>
+  </body>
+</html>

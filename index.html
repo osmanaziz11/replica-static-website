@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punjab Job Portal - Gop</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assects/css/index.css" />
+  </head>
+  <body class="position-relative">
+   
+    <header>
+      <!-- Top Header  -->
+      <div id="top-header" class="container-fluid w-100">
+        <div class="row h-100">
+          <div class="col-12 h-100 d-flex justify-content-end pe-sm-5 pe-1">
+            <ul class="list-unstyled d-inline-flex flex-row">
+              <li class="ms-3">REGISTER</li>
+              <li class="ms-3">
+                <i class="fas fa-sign-in-alt me-2"></i><a href="profile-builder.html">LOGIN</a>
+              </li>
+              <li class="ms-3">
+                <i class="fas fa-sign-in-alt me-2"></i>MEMBER LOGIN
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main Header  -->
+      <div id="navbar" class="container-fluid">
+        <div class="row h-100 p-3">
+          <div
+            class="col-4 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="https://www.jobs.punjab.gov.pk/new_design/images/logo.png"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+          <div
+            class="
+              col-8
+              d-flex
+              h-100
+              justify-content-center
+              align-items-center
+              ps-5
+            "
+          >
+            <ul
+              class="
+                list-unstyled
+                d-lg-flex d-none
+                align-items-center
+                h-100
+                ms-5
+              "
+            >
+              <li class="ms-5">HOME</li>
+              <li class="ms-4">JOBS</li>
+              <li class="ms-4">DEPARTMENTAL CONTACTS</li>
+              <li class="ms-4">FAQ'S</li>
+            
+            </ul>
+            <i class="fas fa-bars d-lg-none d-block" style="position: relative; left: 50%; font-size: 23px;"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <!-- Hero Section  -->
+      <div id="hero-container" class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-0">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide h-100"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner h-100">
+                <div
+                  class="carousel-item active h-100"
+                  data-bs-interval="10000"
+                >
+                  <img src="./assects//media/B2.jpg" alt="" />
+                </div>
+                <div class="carousel-item h-100" data-bs-interval="2000">
+                  <img src="./assects//media/B1.jpg" alt="" />
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="./assects//media/B2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-12 boxes">
+                  Available Jobs 89
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 boxes">
+                  Registered Departments 556
+                </div>
+                <div class="col-md-4 col-12 boxes">
+                  Registered Candidates 216524
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center position-absolute mb-4 mh">
+        Search & Apply Online on All Jobs
+      </h1>
+      <div id="search-container" class="container position-absolute p-3 mt-3">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12 mb-2">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Looking for"
+            />
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 mb-2">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Departments</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 mb-2">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Location</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 mb-2">
+            <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Search here.."
+          />
+        </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section Content  -->
+      <div id="content-container" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div
+              class="
+                pro-box
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-column
+                mb-3
+              "
+            >
+              <img
+                src="https://www.jobs.punjab.gov.pk/new_design/images/pro_1.png"
+                class="pro_images"
+              />
+              <h6>Professional Identification</h6>
+              <p data-uw-styling-context="true">
+                Create your online resume and make it available to Government
+                Departments.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+            <div
+              class="
+                pro-box
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-column
+                mb-3
+              "
+            >
+              <img
+                src="https://www.jobs.punjab.gov.pk/new_design/images/pro_1.png"
+                class="pro_images"
+              />
+              <h6>Professional Identification</h6>
+              <p data-uw-styling-context="true">
+                Create your online resume and make it available to Government
+                Departments.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 d-flex justify-content-center mb-3">
+            <div
+              class="
+                pro-box
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-column
+              "
+            >
+              <img
+                src="https://www.jobs.punjab.gov.pk/new_design/images/pro_1.png"
+                class="pro_images"
+              />
+              <h6>Professional Identification</h6>
+              <p data-uw-styling-context="true">
+                Create your online resume and make it available to Government
+                Departments.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col">
+            <h2 class="text-center">Jobs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="container">
+              <table class="responsive-table">
+
+                <thead>
+                  <tr>
+                    <th scope="col">Department</th>
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Project</th>
+                    <th scope="col">Province</th>
+                    <th scope="col">Last Apply Date</th>
+                   
+                  <th scope="col"></th>
+              
+                  </tr>
+                </thead>
+               
+                <tbody>
+            
+                 
+                 
+                  
+                  <tr>
+                    <th scope="row">Punjab Seed Corporation</th>
+                    <td data-title="Released">Project Director</td>
+                    <td data-title="Studio">Punjab Seed Corporation (PMU)</td>
+                    <td data-title="Worldwide Gross" data-type="currency">PUNJAB</td>
+                    <td data-title="Domestic Gross" data-type="currency">PUNJAB</td>
+                   
+                    <td data-title="Budget" data-type="currency"><Button>View Detail</Button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Punjab Seed Corporation</th>
+                    <td data-title="Released">Project Director</td>
+                    <td data-title="Studio">Punjab Seed Corporation (PMU)r</td>
+                    <td data-title="Worldwide Gross" data-type="currency">PUNJAB</td>
+                    <td data-title="Domestic Gross" data-type="currency">PUNJAB</td>
+                 
+                    <td data-title="Budget" data-type="currency"><Button>View Detail</Button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Punjab Seed Corporation</th>
+                    <td data-title="Released">Project Director</td>
+                    <td data-title="Studio">Punjab Seed Corporation (PMU)</td>
+                    <td data-title="Worldwide Gross" data-type="currency">PUNJAB</td>
+                    <td data-title="Domestic Gross" data-type="currency">PUNJAB</td>
+                   
+                    <td data-title="Budget" data-type="currency"><Button>View Detail</Button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Punjab Seed Corporation</th>
+                    <td data-title="Released">Project Director</td>
+                    <td data-title="Studio">Punjab Seed Corporation (PMU)</td>
+                    <td data-title="Worldwide Gross" data-type="currency">PUNJAB</td>
+                    <td data-title="Domestic Gross" data-type="currency">PUNJAB</td>
+                   
+                    <td data-title="Budget" data-type="currency"><Button>View Detail</Button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Punjab Seed Corporation</th>
+                    <td data-title="Released">Project Director</td>
+                    <td data-title="Studio">Punjab Seed Corporation (PMU)</td>
+                    <td data-title="Worldwide Gross" data-type="currency">PUNJAB</td>
+                    <td data-title="Domestic Gross" data-type="currency">PUNJAB</td>
+          
+                    <td data-title="Budget" data-type="currency"><Button>View Detail</Button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Punjab Seed Corporation</th>
+                    <td data-title="Released">Project Director</td>
+                    <td data-title="Studio">Punjab Seed Corporation (PMU)</td>
+                    <td data-title="Worldwide Gross" data-type="currency">PUNJAB</td>
+                    <td data-title="Domestic Gross" data-type="currency">PUNJAB</td>
+              
+                    <td data-title="Budget" data-type="currency"><Button>View Detail</Button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer-container" class="container-fluid">
+        <div class="row p-3">
+          <div
+            class="
+              col-md-3
+              d-flex
+              justify-content-center
+              align-items-center
+              col-sm-6
+              mb-3
+            "
+          >
+            <a href="https://www.jobs.punjab.gov.pk/"
+              ><img
+                src="https://www.jobs.punjab.gov.pk/new_design/images/footer_logo.png"
+                class="img-responsive footer_img"
+            /></a>
+          </div>
+          <div
+            class="
+              col-md-3 col-sm-6
+              d-flex
+              align-items-md-start align-items-center
+              flex-column
+              h-100
+            "
+          >
+            <h5>Sitemap</h5>
+           
+            <ul class="list-unstyled">
+              <li class="styleBar mb-2"></li>
+              <li>Home</li>
+              <li>Jobs</li>
+              <li>Deparmetns</li>
+              <li>FAQ's</li>
+            </ul>
+          </div>
+          <div
+            class="
+              col-md-3 col-sm-6
+              d-flex
+              align-items-md-start align-items-center
+              flex-column
+              h-100
+            "
+          >
+            <h5>Career Center</h5>
+            
+            <ul class="list-unstyled">
+              <li class="styleBar mb-2"></li>
+              <li>Interview</li>
+              <li>Guidence</li>
+              <li>Job Search</li>
+              <li>Career News</li>
+            </ul>
+          </div>
+          <div
+            class="
+              col-md-3 col-sm-6
+              d-flex
+              flex-column
+              align-items-md-start align-items-center
+              h-100
+            "
+          >
+            <h5>Contact Us</h5>
+  
+            <ul class="list-unstyled">
+              <li class="styleBar mb-2"></li>
+              <li><i class="fab fa-facebook"></i> /facebook.com</li>
+              <li><i class="fas fa-phone-square-alt"></i> +92343343434</li>
+              <li><i class="fas fa-envelope"></i> xxx@gmail.com</li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
